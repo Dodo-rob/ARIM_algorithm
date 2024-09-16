@@ -10,7 +10,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体显示中文
 plt.rcParams['axes.unicode_minus'] = False  # 正常显示负号
 
 
-class Arima_mol:
+class Arimamol:
     def __init__(self, file_path, sheet_na, y_data, x_data):
         """
         :param file_path: Excel 文件路径
@@ -118,7 +118,7 @@ class Arima_mol:
 
 
 def main():
-    junlei_forecast = Arima_mol(file_path='C:/Users/DoDO/Desktop/N.xlsx', sheet_na='Sheet1', y_data='年份',
+    junlei_forecast = Arimamol(file_path='C:/Users/DoDO/Desktop/N.xlsx', sheet_na='Sheet1', y_data='年份',
                                 x_data='菌类平均价格')
     junlei_forecast.run(n_years=7)
 
